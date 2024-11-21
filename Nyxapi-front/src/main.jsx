@@ -11,6 +11,7 @@ import {
 import App from './App';
 import Homepage from './pages/Homepage';
 import Auth from './components/auth';
+import LandingPage from './components/landingPage';
 import Layout from './pages/Layout';
 import Projects from './pages/Projects';
 import NotFound from './pages/404';
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       {/* Public Routes */}
       <Route index element={<Homepage />} />
       <Route path="login" element={<Auth />} />
+      <Route path="landing" element={<LandingPage />} />
 
       {/* Dashboard Routes with Layout */}
       <Route path="dashboard" element={<Layout />}>
